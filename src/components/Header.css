@@ -1,24 +1,31 @@
 /* src/components/Header.css */
 
 .header {
+    width: 100%;
+    padding: 16px 0;
     text-align: center;
-    padding: 20px;
     background: linear-gradient(135deg, #3b5998, #4a69bd);
     color: #ffffff;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #dfe6e9;
   }
   
   .header h1 {
     font-size: 1.8rem;
-    margin-bottom: 8px;
-    color: #f7f9fb;
+    margin: 0;
+    font-weight: bold;
     letter-spacing: 1px;
   }
   
   .header p {
     font-size: 1rem;
-    color: #dfe6e9;
-    margin-top: 0;
+    color: #f0f4f8;
+    max-width: 80%;
+    margin: 8px auto 0;
+    line-height: 1.4;
   }
   

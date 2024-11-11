@@ -8,7 +8,7 @@ function OutputResult({ result }) {
 
   return (
     <div>
-      <h2>Output Result</h2>
+      <h2>Authentication Result</h2>
       <p>{result ? 'true' : 'false'}</p>
     </div>
   );

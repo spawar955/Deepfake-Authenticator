@@ -11,8 +11,8 @@ body {
   background-color: #f3f4f6;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  align-items: flex-start;
+  padding-top: 120px;
   color: #333;
 }
 
@@ -23,15 +23,7 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  text-align: center;
-}
-
-h1 {
-  font-size: 2rem;
-  color: #2c3e50;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  margin: 20px auto;
 }
 
 .container {
@@ -39,52 +31,70 @@ h1 {
   flex-direction: column;
   gap: 2rem;
   align-items: center;
-}
-
-.video-uploader, .output-result {
-  width: 100%;
   padding: 20px;
-  border-radius: 8px;
-  background: #e8f0fe;
-  transition: all 0.3s ease;
 }
 
-.video-uploader:hover, .output-result:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  background-color: #d2e3fc;
+/* Video Uploader Box Styling */
+.video-uploader {
+  width: 100%;
+  padding: 40px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.video-uploader:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+  font-size: 1.6rem;
+  margin-bottom: 12px;
   color: #3b5998;
+  text-align: center;
 }
 
 p {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: #555;
 }
 
+/* Input File Button Styling */
 input[type="file"] {
-  display: block;
-  margin: 1rem auto;
-  padding: 10px;
+  padding: 12px 24px;
   background: #3b5998;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 1rem;
-  transition: background-color 0.3s;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 input[type="file"]:hover {
   background-color: #334d8f;
+  transform: scale(1.05);
+}
+
+.output-result {
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  background: #e8f0fe;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
 }
 
 .output-result p {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #2c3e50;
   opacity: 0;
   animation: fadeIn 0.5s forwards;
@@ -98,5 +108,3 @@ input[type="file"]:hover {
     opacity: 1;
   }
 }
-
-

@@ -16,17 +16,19 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <>
       <Header />
-      <div className="container">
-        <div className="video-uploader">
-          <VideoUploader onVideoUpload={handleVideoUpload} />
-        </div>
-        <div className="output-result">
-          <OutputResult result={outputResult} />
+      <div className="App">
+        <div className="container">
+          <div className="video-uploader">
+            <VideoUploader onVideoUpload={handleVideoUpload} />
+          </div>
+          <div className="output-result">
+            <OutputResult result={outputResult} />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
