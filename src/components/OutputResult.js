@@ -9,7 +9,7 @@ function OutputResult({ result }) {
   return (
     <div>
       <h2>Authentication Result</h2>
-      <p>{result ? 'true' : 'false'}</p>
+      <p>{result ? 'The video is original' : 'The video is AI generateds'}</p>
     </div>
   );
 }
